@@ -1,0 +1,86 @@
+$mont:'Montserrat', sans-serif;
+$sans:'Open Sans', sans-serif;
+
+@mixin font($font,$font-weight,$font-size) {
+    font-size: $font-size ;
+    font-family: $font;
+    font-weight: $font-weight;
+}
+
+.banner{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 134px;
+    .banner-buttons{
+        position: absolute;
+        top: 2%;
+        right: 14%;
+        display: flex;
+        flex-direction: row;
+        .banner-button{
+            display: block;
+            background-color: #ffffff;
+            border: 1px solid #534FD2;
+            width: 50px;
+            height: 27px;
+            border-radius: 25px;
+            position: relative;
+            margin-right: 5px;
+            .but-pic{
+                position: absolute;
+                top: 28%;
+                left: 37%;
+            }
+        }
+    }
+    .banner-picture{
+        // max-width: 1116px;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+    .promo1{
+        right: 74px;
+        top: 79px;
+        width: 149px;
+        background-color:#9e98dc;
+        padding: 102px 20px 20px 20px;
+        .text{  
+            background-color:#9e98dc;  
+            text-transform: uppercase;
+            color: #1c2a39;
+            max-width: 109px;
+            @include font($mont,700,18px);
+        } 
+        img{
+            background-color:#9e98dc;   
+        }
+    }
+    .promo2{
+        bottom: 79px;
+        right: -20px;
+        width: 158px;
+        background-color:#ff9fe6;
+        padding: 149px 47px 20px 20px;
+        .text{    
+            text-transform: uppercase;
+            background-color:#ff9fe6;
+            color: #1c2a39;
+            max-width: 69px;
+            @include font($mont,700,18px);
+        }
+        img{
+            background-color:#ff9fe6;
+        }
+    }
+    .promo-link{
+        position: absolute;
+        box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+        transition: transform  .4s ease-in;
+        &:hover{
+        transform: translate(-10px,-5px);
+        }
+    }
+}
+
+

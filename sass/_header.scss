@@ -1,0 +1,36 @@
+$mont:'Montserrat', sans-serif;
+$sans:'Open Sans', sans-serif;
+
+@mixin font($font,$font-weight,$font-size) {
+    font-size: $font-size ;
+    font-family: $font;
+    font-weight: $font-weight;
+}
+
+header{
+    // max-width: 1116px;
+    width: 75%;
+    margin: auto;
+    padding: 44px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        @include font($mont,700,24px);
+        color: #1C2A39;
+    }
+    .nav-item{
+        @include font($mont,700,11px);
+        padding: 0 20px;
+        color:#5C6A79;
+        transition: all .3s ease;
+        &:hover{
+            color: #1C2A39;
+            text-shadow: 0 0 1px #1C2A39;
+        }
+    }
+    .menu-item{
+        padding-left: 40px;
+    }
+}

@@ -1,0 +1,87 @@
+$mont:'Montserrat', sans-serif;
+$sans:'Open Sans', sans-serif;
+
+@mixin font($font,$font-weight,$font-size) {
+    font-size: $font-size ;
+    font-family: $font;
+    font-weight: $font-weight;
+}
+footer{
+    background-color: #efeef6;
+    border-top: 2px solid #a5b3c1;
+    .container{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: top; 
+        padding: 34px 0;
+        .menu{
+            display: flex;
+            flex-direction: column;
+            .logo{
+                @include font($mont,700,24px);
+                color: #1C2A39;
+                padding-bottom:7px;
+            }
+            .menu-item{
+                @include font($mont,700,14px);
+                padding-bottom:7px;
+                color:#5C6A79;
+                transition: all .3s ease;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                &:hover{
+                color: #1C2A39;
+                text-shadow: 0 0 1px #1C2A39;
+            }
+            }
+        }
+        .contact-text{
+            @include font($mont,700,24px);
+            color: #1C2A39;
+            padding-bottom:15px;
+        }
+        .email-input{
+            border-radius: 4px 0 0 4px;
+            height: 40px;
+            max-width: 328px;
+            padding: 0px 16px;
+            color: #5C6A79;
+            @include font($mont,500,16px);
+            border: 1px solid #B3C3D5;
+        }
+        .input-button{
+            width: 120px;
+            height: 40px;
+            color: white;
+            background: #1C2A39;
+            border-radius: 0 4px 4px 0;
+            border: none;
+            @include font($mont,500,16px);
+            transform: translateX(-5px);
+        }
+        .social{
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .social-item{
+                color: #5C6A79;
+                @include font($mont, 400, 14px);
+                .bold{
+                    @include font($mont, 700, 14px)
+                }
+            }
+            .social-icons{
+                display: flex;
+                flex-direction:row ;
+                .social-icon{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
