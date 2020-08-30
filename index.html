@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +34,11 @@
                 </a>             
             </a>
         </div>
-        <img src="../img/banner.png" alt="banner" class="banner-picture">
+        <div class="owl-carousel owl-theme">
+            <div><img src="../img/banner.png" alt="banner" class="banner-picture"></div>
+            <div><img src="../img/banner.png" alt="banner" class="banner-picture"></div>
+            <div><img src="../img/banner.png" alt="banner" class="banner-picture"></div>
+        </div>
         <a href="#" class="promo1 promo-link">
             <p class="text">Change old book on new</p>
             <img src="../img/arrow.svg" alt="">
@@ -177,5 +183,7 @@
         </div>
     </footer>
 </body>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="../js/index.js"></script>
 </html>

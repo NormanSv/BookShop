@@ -23,5 +23,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
   }
 }
