@@ -1,0 +1,23 @@
+{
+  "name": "books_shop",
+  "version": "1.0.1",
+  "description": "my books shop, where i firstly use sass and gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NormanSv/BookShop.git"
+  },
+  "keywords": [
+    "Landing",
+    "html"
+  ],
+  "author": "Norman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NormanSv/BookShop/issues"
+  },
+  "homepage": "https://github.com/NormanSv/BookShop#readme"
+}
