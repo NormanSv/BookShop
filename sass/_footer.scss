@@ -44,25 +44,33 @@ footer{
             color: #1C2A39;
             padding-bottom:15px;
         }
-        .email-input{
-            border-radius: 4px 0 0 4px;
-            height: 40px;
-            max-width: 328px;
-            padding: 0px 16px;
-            color: #5C6A79;
-            @include font($mont,500,16px);
-            border: 1px solid #B3C3D5;
+        
+        .input{
+            display: flex;
+            .email-input{
+                display: block;
+                border-radius: 4px 0 0 4px;
+                height: 40px;
+                max-width: 328px;
+                padding: 0px 16px;
+                color: #5C6A79;
+                @include font($mont,500,16px);
+                border: 1px solid #B3C3D5;
+                outline-style: none;
+            }
+            .input-button{
+                display: block;
+                width: 120px;
+                height: 40px;
+                color: white;
+                background: #1C2A39;
+                border-radius: 0 4px 4px 0;
+                border: none;
+                @include font($mont,500,16px);
+                outline-style: none;
+            }
         }
-        .input-button{
-            width: 120px;
-            height: 40px;
-            color: white;
-            background: #1C2A39;
-            border-radius: 0 4px 4px 0;
-            border: none;
-            @include font($mont,500,16px);
-            transform: translateX(-5px);
-        }
+        
         .social{
             align-items: flex-end;
             display: flex;

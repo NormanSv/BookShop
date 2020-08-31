@@ -21,10 +21,9 @@
   },
   "homepage": "https://github.com/NormanSv/BookShop#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   },
-  "dependencies": {
-    "owl.carousel": "^2.3.4"
-  }
+  "dependencies": {}
 }
