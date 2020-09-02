@@ -28,6 +28,9 @@ header .nav-item:hover {
 header .menu-item {
   padding-left: 40px;
 }
+header .menu-item:first-child {
+  padding-left: 0;
+}
 
 .banner {
   overflow-x: hidden;
@@ -39,7 +42,7 @@ header .menu-item {
   display: block;
   margin: 0 auto;
 }
-.banner .owl-container .item {
+.banner .owl-container .banner-item {
   width: 100%;
 }
 .banner .owl-container .owl-nav {
@@ -227,11 +230,12 @@ header .menu-item {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 96px;
+  margin-right: 15px;
 }
 .main .items .item .item-picture {
-  width: 212px;
-  height: 300px;
-  object-fit: contain;
+  max-width: 212px;
+  max-height: 300px;
+  object-fit: cover;
 }
 .main .items .item .item-description {
   padding-left: 36px;
@@ -301,6 +305,41 @@ header .menu-item {
   color: #ffffff;
 }
 .main .items .item .item-description .buy-button:hover::after {
+  visibility: visible;
+  transform: translateX(0%);
+}
+.main .items .item .mobile-buy-button {
+  display: none;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 18px 0;
+  border: 1px solid #4c3db2;
+  color: #4c3db2;
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+.main .items .item .mobile-buy-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  background-color: #4c3db2;
+  visibility: hidden;
+  transition: 0.3s ease-in;
+  z-index: -1;
+}
+.main .items .item .mobile-buy-button:hover {
+  color: #ffffff;
+}
+.main .items .item .mobile-buy-button:hover::after {
   visibility: visible;
   transform: translateX(0%);
 }
@@ -405,7 +444,7 @@ footer .container .social .social-icons .social-icon {
   margin-left: 10px;
 }
 
-@media (max-width: 1295px) {
+@media screen and (max-width: 1295px) {
   .mobile-promo {
     display: flex;
   }
@@ -413,21 +452,32 @@ footer .container .social .social-icons .social-icon {
   .promo {
     display: none;
   }
-
-  .footer {
-    width: 100%;
+}
+@media screen and (max-width: 1098px) {
+  .item {
+    flex-direction: column;
   }
 
-  .banner {
-    width: 100%;
+  .item-description {
+    display: none;
   }
 
-  .main {
+  .mobile-buy-button {
+    display: block;
     width: 100%;
+    margin-top: 10px;
   }
 
-  .footer {
-    width: 100%;
+  .container {
+    flex-direction: column;
+  }
+  .container .social {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 966px) {
+  .nav {
+    display: none;
   }
 }
 * {

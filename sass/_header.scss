@@ -32,5 +32,8 @@ header{
     }
     .menu-item{
         padding-left: 40px;
+        &:first-child{
+            padding-left: 0;
+        }
     }
 }
