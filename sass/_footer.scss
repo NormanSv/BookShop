@@ -14,7 +14,6 @@ footer{
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
         align-items: top; 
         padding: 34px 0;
         .menu{
@@ -72,7 +71,6 @@ footer{
         }
         
         .social{
-            align-items: flex-end;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

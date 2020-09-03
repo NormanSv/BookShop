@@ -6,27 +6,66 @@
         display: none;
     }
 }
+// @media not screen and (max-width:1098px){
+//     .mobile-buy-button{
+//         display: none;
+//     }
+//     .container{
+//         flex-direction: row;
+//         .social{
+//             align-items: flex-end;
+//         }
+//     }
+// }
 @media screen and (max-width:1098px){
-    .item{
-        flex-direction: column;
-    }
-    .item-description{
-        display: none;
-    }
-    .mobile-buy-button{
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .container{
-        flex-direction: column;
-        .social{
-            align-items: flex-start;
+    .main{
+        .items{
+            .item{
+                flex-direction: column;
+                .item-description{
+                    display: none;
+                }
+                .mobile-buy-button{
+                    display: block;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
         }
     }
+    footer{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .social{
+                margin-top: 10px;
+                .social-icons{
+                    justify-content: center;
+                }
+            }
+        }
+    }   
 }
 @media screen and (max-width:966px){
     .nav{
         display: none;
+    }
+    .items{
+        width: 50%;
+    }
+    .catalog{
+        width: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    footer{
+        .container{
+            .contact{
+                .email-input{
+                    width:30%;
+                }
+            }
+        }
     }
 }

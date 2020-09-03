@@ -60,7 +60,7 @@ $sans:'Open Sans', sans-serif;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 96px;
+            margin-bottom: 45px;
             margin-right: 15px;
             .item-picture{
                 max-width: 212px;
@@ -132,8 +132,8 @@ $sans:'Open Sans', sans-serif;
             }
             .mobile-buy-button{
                     position: relative;
-                    display: none;
                     text-align: center;
+                    display: none;
                     text-transform: uppercase;
                     padding: 18px 0;
                     border: 1px solid #4c3db2;
