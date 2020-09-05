@@ -51,12 +51,19 @@
     .nav{
         display: none;
     }
-    .items{
-        width: 50%;
+    .menu{
+        display: none;
     }
-    .catalog{
-        width: 50%;
+    .main{
+        .items{
+            width: 60%;
+            margin-left: 20px;
+        }
+        .catalog{
+            width: 40%;
+        }
     }
+    
 }
 @media screen and (max-width:480px){
     footer{
@@ -65,7 +72,22 @@
                 .email-input{
                     width:30%;
                 }
+                input::placeholder{
+                    content: "Your email...";
+                }
             }
+        }
+    }
+    .banner{
+        .owl-container{
+            width: 100%;
+        }
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        .catalog::after{
+            left: -300px;
         }
     }
 }
